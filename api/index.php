@@ -1,5 +1,6 @@
 <?php
 // api/index.php - Serverless Router untuk Vercel
+ob_start();
 
 $uri = urldecode(parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH));
 $rootDir = realpath(__DIR__ . '/..');
